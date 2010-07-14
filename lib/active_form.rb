@@ -47,8 +47,6 @@ class ActiveForm
   
   alias save raise_not_implemented_error
   alias save! raise_not_implemented_error
-  alias update_attribute raise_not_implemented_error
-  alias update_attributes raise_not_implemented_error
 
   include ActiveRecord::Validations
   
