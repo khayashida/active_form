@@ -72,8 +72,8 @@ class ActiveForm
     alias validates_acceptance_of raise_not_implemented_error
     alias validates_uniqueness_of raise_not_implemented_error
     alias validates_associated raise_not_implemented_error
-    alias validates_on_create raise_not_implemented_error
-    alias validates_on_update raise_not_implemented_error
+    alias validate_on_create raise_not_implemented_error
+    alias validate_on_update raise_not_implemented_error
     alias save_with_validation raise_not_implemented_error
   end
 end

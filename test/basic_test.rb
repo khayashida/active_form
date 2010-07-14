@@ -235,12 +235,12 @@ class BasicTest < Test::Unit::TestCase
     assert_not_nil nt.errors[:width]
   end
   
-  def test_validates_on_create
+  def test_validate_on_create
     assert_raise(NotImplementedError) do
       self.class.class_eval %q{
         class OnCreateTest < ActiveForm
           attr_accessor :name
-          validates_on_create do
+          validate_on_create do
             # do something
           end
         end
@@ -248,12 +248,12 @@ class BasicTest < Test::Unit::TestCase
     end
   end
   
-  def test_validates_on_update
+  def test_validate_on_update
     assert_raise(NotImplementedError) do
       self.class.class_eval %q{
         class OnUpdateTest < ActiveForm
           attr_accessor :name
-          validates_on_update do
+          validate_on_update do
             # do something
           end
         end
